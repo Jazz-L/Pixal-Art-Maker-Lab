@@ -1,5 +1,5 @@
 // Select color input
-const colorPicker = document.getElementsById('colorPicker');
+var gridColor = document.getElementsById('colorPicker');
 // Select size input
 
 // When size is submitted by the user, call makeGrid()
