@@ -12,4 +12,13 @@ const submitButton = document.getElementById("submitBtn");
 submitButton.addEventListener('click', function (x) {
     makeGrid();
 });
+
+function makeGrid(x) {
+	for (var i = 0; i < gridHeight.value; i++) {
+		const row = grid.insertRow(0);
+		for (var j = 0; j < gridWidth.value; j++) {
+			row.insertCell(0);
+		}
+	}
+}
 // Your code goes here!
