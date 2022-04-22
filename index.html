@@ -1,28 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel Art Maker!</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Pixel Art Maker</h1>
+    <div class="box">
+        <div class="container-fluid">
+            <h2>Choose Canvas Size</h2>
+            <br>
+            <form id="sizePicker">
+                Canvas Height:
+                <input type="number" id="inputHeight" name="n" min="1" value="1">
+                Canvas Width:
+                <input type="number" id="inputWidth" name="m" min="1" value="1">
+                <input type="submit" id="Submit" value="Submit">
+        </form>
+            </div>
+            </div>
+        <br>
+        <h2>Pick A Color</h2>
+        <input type="color" id="colorPicker">
 
-    <h2>Choose Canvas Size</h2>
-    <form id="sizePicker">
-        Canvas Height:
-        <input type="number" id="inputHeight" name="n" min="1" value="1">
-        Canvas Width:
-        <input type="number" id="inputWidth" name="m" min="1" value="1">
-        <input type="submit" id="Submit" value="Submit">
-    </form>
+        <h2> Canvas</h2>
+        <table id="pixelCanvas"></table>
 
-    <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker">
-
-    <h2> Canvas</h2>
-    <table id="pixelCanvas"></table>
-
-    <script src="designs.js"></script>
+        <script src="designs.js"></script>
 </body>
+<footer>
+    <div class="copyright">
+        <p> Made by J.L. Designs</p>
+    </div>
+    </footer>
 </html>
